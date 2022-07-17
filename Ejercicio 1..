@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void main (void) {
+
+char c, palabra[21];
+
+int i;
+
+printf("escriba una palabra de menos de 20 letras:\n");
+
+scanf("%s", palabra);
+
+i=0;
+
+while (palabra[i++]!='\0');
+
+printf(" %s tiene %d letras.\n", palabra, i-1);
+
+printf("%s escrita al reves es: ", palabra);
+
+while(i>0) 
+
+printf("%c", palabra[--i]);
+
+printf("\n");
+}
