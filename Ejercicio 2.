@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <math.h>
+
+void main(void) {
+
+int numero, divisor;
+
+printf("¿Que numero quieres saber si es primo?\n"); 
+
+scanf("%d", &numero);
+
+while(numero<2) {
+
+printf(" no se pueden numeros menores que 2.\n");
+
+printf("Intentalo de nuevo\n"); 
+
+scanf("%d", &numero);
+
+}
+
+for(divisor=2; divisor<=sqrt (numero); divisor++) {
+
+if (numero%divisor==0) {
+
+ printf("%d no es primo. \n", numero); 
+return;
+}
+}
+
+printf("%d es un número primo.\n", numero);
+
+}
