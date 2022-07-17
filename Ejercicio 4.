@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char cadena[200];
+    int i = 0;
+    printf("Introduzca una oración: \n");
+    gets(cadena);
+    printf("\nLa cadena introducida es: %s\n\n", cadena);
+    printf("La cadena al reves es:\n\t");
+    for (i=strlen(cadena); i>=0; i--){
+        printf("%c", cadena[i]);
+    }
+    puts("");
+    return 0;
