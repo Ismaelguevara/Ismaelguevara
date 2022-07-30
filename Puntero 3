@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+#include <conio.h>
+
+main()
+
+{
+
+   int a;
+
+   int *p;
+
+   clrscr();
+
+   printf("Ingrese un valor ENTERO para la variable:\n");
+
+   scanf("%d", &a);
+
+   while(a<0)
+
+   {
+
+       printf("ERROR, el valor debe ser mayor que cero:\n");
+
+       scanf("%d", &a);
+
+   }
+
+   clrscr();
+
+   printf("a=%d\n", a); 
+
+   printf("La dirección de a es %p\n", &a);
+
+   printf("*p=%p\n", p); 
+
+   printf("a=%d\n", *p);
+
+   printf("El tamaño de *p es %d\n", sizeof(p));
+
+   getch();
+
+   return 0;
+
+}
+
