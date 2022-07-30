@@ -1,0 +1,52 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+
+
+void CuentaVocales(char *);
+
+int main()
+{
+char cadena[15];
+printf("Introduce una palabra para contar sus vocales: ");
+fflush(stdin);
+gets(cadena);
+CuentaVocales(cadena);
+}
+
+void CuentaVocales(char *s){
+int contador=0,a=0,e=0,i=0,o=0,u=0;
+while(*s){
+switch(toupper(*s)){
+case 'A':
+a++;
+contador++;
+break;
+case 'E':
+e++;
+contador++;
+break;
+case 'I':
+i++;
+contador++;
+break;
+case 'O':
+o++;
+contador++;
+break;
+case 'U':
+u++;
+contador++;
+break;
+}
+s++;
+}
+printf("La cadena tiene %i vocales\n\n",contador);
+printf("A: %i\n",a);
+printf("E: %i\n",e);
+printf("I: %i\n",i);
+printf("O: %i\n",o);
+printf("U: %i\n",u);
+
+}
